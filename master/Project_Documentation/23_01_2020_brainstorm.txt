@@ -1,0 +1,17 @@
+Meeting with Paul Davies
+Members Present: Efe, Aviral, Lem, Charlie
+Date: 23rd Jan 2020
+
+Ideas for video capturing and image processing
+There are 3 options:
+1) Capture the video and process in rpi and then send it to de1 to display in the screen(no hardware acceleration)
+2) Capture the video in rpi, send it via ethernet/or parallel port communication to de1soc. Then process it in de1soc and display
+3) Capture with a camera compatible with de1soc and do process and display all in de1soc.
+
+- We should seriously consider using linux in de1soc since it gives us a file system which we can easily manage internal and external memory
+
+-We run on 50mhz in de1soc. If we aim to have a video quality of 30 frames per second and assuming each frame is 1 MB then we need to transfer 30 mb per second. If we transfer parallel port and transfer 1 byte per cycle we can really struggle to achieve that. Therefore, we can aim for 10 fps first
+
+-Idea from Efe. We can actually transfer images faster if we design a ethernet interface chip in fpga which runs on a higher clock speed domain than the rest of the circuit. But then it adds greater complexity for handshaking for the rest of the circuit.
+
+

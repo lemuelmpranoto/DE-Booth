@@ -1,0 +1,21 @@
+﻿Product:         Image Processing Accelerator
+1. Targeted Market: 
+A younger demographic (and other social media users) who enjoy communicating and socializing with each other by sharing current pictures of themselves by applying various image and audio filters. This product aims to connect users with friends and family through increasing engagement and communication within the platform.
+
+
+Market needs and constraints by target market:
+1. The filter is applied to the image very quickly (processing time less than one second)
+2. Have unique, decorative, modern, and enjoyable image filters
+3. Ability to share images with other people on various social media platforms
+4. Portable, battery powered
+5. Easily interfaceable (intuitive UI)
+
+
+2. Requirements:
+1. Accelerate convolution using hardware to apply various filters
+2. Apply various filters to images to get different visual effects such as blurring and sharpening
+3. Can also implement different image processing applications such as edge-detection, image compression, denoising
+4. Hardware: Touch Screen UI, Camera, 
+5. Use raspberry pi and camera
+6. Wifi capabilities/cloud requirement: use raspberry pi and cloud to “post” pictures in various popular social media platforms 
+7. Apply sound processing and, if time allows accelerate it by hardware
